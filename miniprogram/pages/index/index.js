@@ -20,12 +20,12 @@ Page({
     }
 
     wx.cloud.callFunction({
-      name: 'getinfo',
+      name: 'cyk',
       data: {
         a:10
       }
     }).then((res)=>{
-      console.log(res,'getinfo')
+      console.log(res.result,'getinfo')
     })
 
     // 获取用户信息
@@ -63,7 +63,7 @@ Page({
       data: {},
       success: res => {
         console.log('[云函数] [login] user openid: ', res)
-        app.globalData.openid = res.result.openid
+        app.globalData.openid = res.result.userInfo.openId
         wx.navigateTo({
           url: '../userConsole/userConsole',
         })
