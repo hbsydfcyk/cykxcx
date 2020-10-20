@@ -7,4 +7,5 @@
     </view>
 </view>
 <view style="margin-top:{{navH*2}}rpx;">
+  <text>aaaaa</text>
 </view>
