@@ -8,6 +8,6 @@ exports.main = async (event, context) => {
   const wxContext = cloud.getWXContext()
 
   return {
-    wxContext
+ a:123456
   }
 }

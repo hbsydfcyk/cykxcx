@@ -2,7 +2,7 @@
     <view class='nav_title'>
         <text>选择门店</text>
         <view class='nav_leftarrow' bindtap='navBack'>
-            <image src='../../image/icon_API.png'></image>
+            <!-- <image src='/images/market_img/left_arrows.png'></image> -->
         </view>
     </view>
 </view>
