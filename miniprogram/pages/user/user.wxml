@@ -1,11 +1,4 @@
-<view class="nav_navigation" style='height:{{navH}}px; '>
-    <view class='nav_title'>
-        <text>选择门店</text>
-        <view class='nav_leftarrow' bindtap='navBack'>
-          <image src='../../image/icon_API.png'></image>
-        </view>
-    </view>
-</view>
-<view style="margin-top:{{navH*2}}rpx;">
-  <text>aaaaa</text>
+<view>
+<image class="bgimg" src='../../image/userbg.png'></image>
+
 </view>

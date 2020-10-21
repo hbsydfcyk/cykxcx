@@ -7,18 +7,25 @@ Page({
    */
   data: {
     navH: app.globalData.navH,
+    active:1
   },
   navBack() {
     wx.redirectTo({
       url: '/pages/index/index'
     })
   },
+  onChange(event) {
+    // wx.showToast({
+    //   title: `切换到标签 ${event.detail.name}`,
+    //   icon: 'none',
+    // });
+  },
 
   /**
    * 生命周期函数--监听页面加载
    */
   onLoad: function (options) {
-    console.log(this.data.navH)
+    // console.log(this.data.navH)
   },
 
   /**

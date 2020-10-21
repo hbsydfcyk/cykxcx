@@ -1,0 +1,11 @@
+<view class="nav_navigation" style='height:{{navH}}px; '>
+    <view class='nav_title'>
+        <text>{{title}}</text>
+        <view class='nav_leftarrow' bindtap='navBack'>
+            <image src='../../image/direction-left.svg'></image>
+        </view>
+    </view>
+</view>
+<view style="margin-top:{{navH*2}}rpx;">
+<text>aaaaa</text>
+</view>

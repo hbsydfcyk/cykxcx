@@ -1,5 +1,20 @@
 // miniprogram/pages/user/user.js
 const app = getApp()
+const items = [{
+    text: 'aa',
+  },
+  {
+    text: 'bb',
+  },
+  {
+    text: 'cc',
+  },
+  {
+    text: 'dd',
+  },
+
+]
+
 Page({
 
   /**
@@ -7,13 +22,34 @@ Page({
    */
   data: {
     navH: app.globalData.navH,
+    mainActiveIndex: 0,
+    activeId: null,
+    items
   },
   navBack() {
     wx.redirectTo({
       url: '/pages/index/index'
     })
   },
+  onClickNav({
+    detail = {}
+  }) {
+    console.log(detail)
+    this.setData({
+      mainActiveIndex: detail.index || 0,
+    });
+  },
 
+  onClickItem({
+    detail = {}
+  }) {
+    console.log(detail)
+    const activeId = this.data.activeId === detail.id ? null : detail.id;
+
+    this.setData({
+      activeId
+    });
+  },
   /**
    * 生命周期函数--监听页面加载
    */

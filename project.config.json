@@ -8,6 +8,7 @@
     "minified": true,
     "newFeature": true,
     "coverView": true,
+    "nodeModules": true,
     "autoAudits": false,
     "scopeDataCheck": false,
     "uglifyFileName": true,

@@ -7,6 +7,7 @@ Page({
    */
   data: {
     navH: app.globalData.navH,
+    title:"我的"
   },
   navBack() {
     wx.redirectTo({

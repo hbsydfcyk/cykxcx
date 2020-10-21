@@ -1,10 +1,22 @@
 <view class="nav_navigation" style='height:{{navH}}px; '>
     <view class='nav_title'>
-        <text>选择门店</text>
-        <view class='nav_leftarrow' bindtap='navBack'>
-            <!-- <image src='/images/market_img/left_arrows.png'></image> -->
-        </view>
+        <text>{{title}}</text>
+        <!-- <view class='nav_leftarrow' bindtap='navBack'>
+          <image src='../../image/direction-left.svg'></image>
+        </view> -->
     </view>
 </view>
 <view style="margin-top:{{navH*2}}rpx;">
+  <view style="height:200px"></view>
+  <van-tree-select
+  items="{{ items }}"
+  height="500"
+  main-active-index="{{ mainActiveIndex }}"
+  active-id="{{ activeId }}"
+  bind:click-nav="onClickNav"
+  bind:click-item="onClickItem"
+>
+<image wx:if="{{mainActiveIndex==0}}" src="https://img.yzcdn.cn/vant/apple-1.jpg" slot="content" />
+  <image wx:if="{{mainActiveIndex==0}}" src="https://img.yzcdn.cn/vant/apple-1.jpg" slot="content" />
+</van-tree-select>
 </view>
